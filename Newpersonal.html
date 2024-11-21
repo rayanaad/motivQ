@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Motivational Quotes</title>
+  <style>
+    body {
+      background-color: #f3f4f6;
+      font-family: 'Arial', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      color: #333;
+    }
+
+    .container {
+      background-color: #fff;
+      border-radius: 10px;
+      padding: 40px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      width: 100%;
+      max-width: 600px;
+    }
+
+    h1 {
+      color: #4CAF50;
+      font-size: 36px;
+      margin-bottom: 20px;
+      font-weight: 700;
+    }
+
+    #quote {
+      font-size: 24px;
+      font-style: italic;
+      color: #555;
+      margin-bottom: 20px;
+    }
+
+    button {
+      background-color: #4CAF50;
+      color: #fff;
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 28px;
+      }
+
+      #quote {
+        font-size: 20px;
+      }
+
+      button {
+        font-size: 14px;
+      }
+    }
+  </style>
+  <script>
+    const quotes = [
+      "Believe in yourself and all that you are.",
+      "The only way to do great work is to love what you do.",
+      "Success is not the key to happiness. Happiness is the key to success.",
+      "Your limitation is only your imagination.",
+      "Push yourself, because no one else is going to do it for you.",
+      "Great things never come from comfort zones.",
+      "Dream it. Wish it. Do it.",
+      "Success does not just find you. You have to go out and get it.",
+      "The harder you work for something, the greater you will feel when you achieve it.",
+      "Do not stop when you are tired. Stop when you are done.",
+      "Wake up with determination. Go to bed with satisfaction.",
+      "Do something today that your future self will thank you for.",
+      "Little things make big days.",
+      "It is going to be hard, but hard does not mean impossible.",
+      "Do not wait for opportunity. Create it.",
+      "Sometimes we are tested not to show our weaknesses, but to discover our strengths.",
+      "The key to success is to focus on goals, not obstacles.",
+      "Dream bigger. Do bigger.",
+      "Believe you can and you are halfway there.",
+      "Act as if what you do makes a difference. It does.",
+      "Success is not in what you have, but who you are.",
+      "Do not wait for the perfect moment. Take the moment and make it perfect.",
+      "Everything you have ever wanted is on the other side of fear.",
+      "Opportunities do not happen, you create them.",
+      "It is never too late to be what you might have been.",
+      "Try not to become a man of success, but rather try to become a man of value.",
+      "The only limit to our realization of tomorrow is our doubts of today.",
+      "You are braver than you believe, stronger than you seem, and smarter than you think.",
+      "Act as if what you do makes a difference. It does.",
+      "Success is what happens after you have survived all your mistakes."
+    ];
+
+    function generateQuote() {
+      const randomIndex = Math.floor(Math.random() * quotes.length);
+      document.getElementById('quote').innerText = quotes[randomIndex];
+    }
+
+    window.onload = generateQuote;
+  </script>
+</head>
+<body>
+  <div class="container">
+    <h1>Motivational Quote</h1>
+    <p id="quote"></p>
+    <button onclick="generateQuote()">Get Another Quote</button>
+  </div>
+</body>
+</html>
+
+
+
+
